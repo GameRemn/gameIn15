@@ -14,9 +14,6 @@ public class Number : MonoBehaviour
         audioSource = GetComponent<AudioSource>();
         target = transform.position;
     }
-    void Update()
-    {
-    }
     private void OnMouseDown()
     {
         numbersManager.NewTarget(transform);
