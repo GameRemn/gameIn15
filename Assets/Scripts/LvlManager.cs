@@ -1,8 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
-public static class LvlManager
+public class LvlManager : MonoSingleton<LvlManager>
 {
-    public static int numberInLine = 2;
+    [SerializeField]
+    private List<Lvl> lvls;
+    [SerializeField]
+    private int lvlDigit;
+    public Lvl lvl=> lvls[lvlDigit];
 }
